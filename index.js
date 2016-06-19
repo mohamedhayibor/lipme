@@ -5,8 +5,6 @@ const ejs = require('ejs');
 const path = require('path');
 const app = express();
 
-const async = require("async");
-
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -22,6 +20,7 @@ const lip = require('./lip.json');
 app.get('/listing', (req, res) => {
   res.render('listing', { lip: lip });
 })
+
 
 const PORT = process.env.PORT || 3000;
 
