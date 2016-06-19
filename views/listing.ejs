@@ -1,0 +1,68 @@
+<% include partials/header.ejs %>
+
+<style media="screen">
+* {
+  margin: 0 auto;
+}
+
+img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ui {
+  width: 30%;
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: white; /* set up to white by default because of some low quality pictures */
+  padding-bottom: 2%;
+  margin: 1.66%;
+}
+
+.cont {
+  padding: 70px;
+}
+
+</style>
+
+<div class="cont">
+
+
+  <header>
+    <img class="image" src="img/Logo.png" alt="lipme" />
+  </header>
+
+  <% lip.forEach(function(item) { %>
+
+    <div class="ui card">
+      <div class="image">
+        <img src=<%= item['img'] %> alt="" />
+      </div>
+      <div class="content">
+        <a class="header"> <%=item.name%></a>
+        <div class="meta">
+          <span class="date"><%=item.item%></span>
+        </div>
+        <div class="description">
+          <%=item.brand%> | <%=item.item%>
+        </div>
+      </div>
+      <div class="extra content">
+        <a>
+          <i class="dollar icon"></i>
+          <%=item.price%>
+        </a>
+      </div>
+    </div>
+
+  <% }) %>
+
+</div>
+
+<% include partials/footer.ejs %>

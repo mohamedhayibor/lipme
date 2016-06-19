@@ -1,0 +1,41 @@
+<% include partials/header.ejs %>
+
+
+<style media="screen">
+  img {
+    padding: 40px;
+    display: block
+    margin: 0 auto;
+    width: 76%;
+    height: 50%;
+  }
+
+  .camera {
+    text-align: center;
+  }
+
+  #canvas {
+    text-align: center;
+  }
+</style>
+
+<img id="image" src="img/Logo.png" alt="lipme" />
+
+<div class="webrtc">
+
+  <div class="camera">
+    <video id="video">Video stream not available.</video>
+    <br>
+    <button id="startbutton" class="ui pink button">Lip it!</button>
+  </div>
+
+  <canvas id="canvas"></canvas>
+
+  <!-- <div class="output">  </div> -->
+
+</div>
+
+<!-- triggering webrtc  -->
+<script type="text/javascript" src="js/capture.js" onsubmit="window.location.href='https://lipme.herokuapp.com'"></script>
+
+<% include partials/footer.ejs %>

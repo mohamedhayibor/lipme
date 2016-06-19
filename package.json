@@ -1,0 +1,30 @@
+{
+  "name": "lipme",
+  "version": "1.0.0",
+  "description": "lipMe app - Making finding the right makeup easy, smooth and fun",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedhayibor/haven.git"
+  },
+  "keywords": [
+    "prototype",
+    "sexy",
+    "hacking",
+    "poc"
+  ],
+  "author": "Mohamed Hayibor <mohamedhayibor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohamedhayibor/haven/issues"
+  },
+  "homepage": "https://github.com/mohamedhayibor/haven#readme",
+  "dependencies": {
+    "ejs": "^2.4.2",
+    "express": "^4.14.0"
+  }
+}
